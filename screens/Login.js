@@ -72,7 +72,8 @@ const Login = ({ loggedInState, loggedInStates, setLoggedInState }) => {
             if (sendTextResponse.status != 200) {
               //invalid phone number, send them to the signup page
               await Alert.alert(
-                'Did you type your number correctly? ' + phoneNumber
+                // 'Did you type your number correctly? ' + phoneNumber
+                'Hello ' + phoneNumber
               );
             } else {
               setLoggedInState(loggedInStates.LOGGING_IN);
